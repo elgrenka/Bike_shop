@@ -1,0 +1,91 @@
+<div class="container">
+  <form [formGroup]="newProductForm" (ngSubmit)="onSubmit()">
+    <fieldset>
+      <legend>Create New Product</legend>
+      <div class="product file">
+        <label for="productImage">Load image: </label>
+        <input type="file" id="productImage" formControlName="productImage" pInputText>
+      </div>
+      
+      <div class="product">
+        <label for="productId">Id: </label>
+        <input type="text" id="productId" formControlName="productId" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productPrice">Price: </label>
+        <input type="text" id="productPrice" formControlName="productPrice" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productDiscount">Discount: </label>
+        <input type="text" id="productDiscount" formControlName="productDiscount" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productMain">Main: </label>
+        <input type="text" id="productMain" formControlName="productMain" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productShop">Shop: </label>
+        <input type="text" id="productShop" formControlName="productShop" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productName">Name: </label>
+        <input type="text" id="productName" formControlName="productName" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productDescription">Description: </label>
+        <input type="text" id="productDescription" formControlName="productDescription" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productShipping">Shipping: </label>
+        <input type="text" id="productShipping" formControlName="productShipping" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productUntil">Discount until: </label>
+        <input type="text" id="productUntil" formControlName="productUntil" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productNew">New: </label>
+        <input type="text" id="productNew" formControlName="productNew" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productColor">Color: </label>
+        <input type="text" id="productColor" formControlName="productColor" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productSize">Size: </label>
+        <input type="text" id="productSize" formControlName="productSize" pInputText>
+      </div>
+
+      <h3>Review</h3>
+      <div class="product">
+        <label for="productAuthor">Author: </label>
+        <input type="text" id="productAuthor" formControlName="productAuthor" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productText">Text: </label>
+        <input type="text" id="productText" formControlName="productText" pInputText>
+      </div>
+
+      <div class="product">
+        <label for="productRating">Rating: </label>
+        <input type="text" id="productRating" formControlName="productRating" pInputText>
+      </div>
+
+      <button type="submit" [disabled]="newProductForm.invalid" pButton label="Create"></button>
+    </fieldset>
+  </form>
+
+  <p><b>New Product: </b>{{newProductForm.value | json}}</p>
+</div>

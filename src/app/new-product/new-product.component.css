@@ -1,0 +1,54 @@
+@import "../../../node_modules/primeicons/primeicons.css";
+@import "../../../node_modules/primeng/resources/themes/lara-light-indigo/theme.css";
+@import "../../../node_modules/primeng/resources/primeng.min.css";
+/*or write this in angular.json*/
+
+.container {
+  font-size: 1.3rem;
+  height: 100%;
+  overflow: auto;
+}
+
+.container p {
+  margin: 5% 10%;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  margin-top: 10px;
+}
+
+.file {
+  display: block;
+  width: 480px;
+  margin-top: 10px;
+}
+
+.file input {
+  margin: 10px auto;
+}
+
+fieldset {
+  width: 40vw;
+  margin: 40px auto 30px;
+  padding-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: rgb(12, 141, 68)
+}
+
+h3 {
+  margin-bottom: 18px;
+}
+
+button {
+  margin: 30px auto 0 70% !important;
+  font-size: 1.2rem !important;
+}
+

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "bike-shop-a2ebe"
+  },
+  "targets": {
+    "bike-shop-a2ebe": {
+      "hosting": {
+        "Bike_Shop": [
+          "bike-shop-a2ebe"
+        ]
+      }
+    }
+  }
+}

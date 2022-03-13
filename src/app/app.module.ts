@@ -16,6 +16,10 @@ import { OrderEditorComponent } from './order-editor/order-editor.component';
 import { BikesContactComponent } from './bikes-contact/bikes-contact.component';
 import { BikesOrderSubmitComponent } from './bikes-order-submit/bikes-order-submit.component';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { environment } from 'src/environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +37,9 @@ import { BikesOrderSubmitComponent } from './bikes-order-submit/bikes-order-subm
     FontAwesomeModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [BikesService],
   bootstrap: [AppComponent]

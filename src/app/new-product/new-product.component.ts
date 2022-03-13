@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Component({
   selector: 'app-new-product',
@@ -31,7 +32,16 @@ export class NewProductComponent implements OnInit {
     console.table(this.newProductForm.value);
   }
 
-  constructor() { }
+  saveData(inputValue: string) {
+    const ref = this.db.list("items");
+    ref.push(inputValue).then((resp) => {
+      console.log(resp);
+    }).catch((error) => {
+      console.error(error);
+    })
+  }
+
+  constructor(private db: AngularFireDatabase) { }
 
   ngOnInit(): void {
   }

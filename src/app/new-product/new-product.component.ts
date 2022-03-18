@@ -41,9 +41,15 @@ export class NewProductComponent implements OnInit {
     })
   }
 
+  data: any = [];
+
   constructor(private db: AngularFireDatabase) { }
 
   ngOnInit(): void {
+    const ref = this.db.list("items");
+    ref.valueChanges().subscribe((data) => {
+      this.data = data;
+    })
   }
 
 }

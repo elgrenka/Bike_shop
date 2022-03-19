@@ -89,6 +89,23 @@
 
   <p><b>New Product: </b>{{newProductForm.value | json}}</p>
   
-  <!-- <p><b>New Product from firebase: </b>{{data[data.length - 1] | json}}</p> -->
-  <p><b>New Product from firebase: </b><span>{{data[data.length - 1]}}<br></span></p>
+  <p><b>New Product from firebase: </b>
+    Image: {{data[data.length - 1].productImage}},
+    Id: {{data[data.length - 1].productId}},
+    Price: {{data[data.length - 1].productPrice}},
+    Discount: {{data[data.length - 1].productDiscount}},
+    Main: {{data[data.length - 1].productMain}},
+    Shop: {{data[data.length - 1].productShop}},
+    Name: {{data[data.length - 1].productName}},
+    Description: {{data[data.length - 1].productDescription}},
+    Shipping: {{data[data.length - 1].productShipping}},
+    Discount until: {{data[data.length - 1].productUntil}},
+    New: {{data[data.length - 1].productNew}},
+    Color: {{data[data.length - 1].productColor}},
+    Size: {{data[data.length - 1].productSize}},
+    Author: {{data[data.length - 1].productAuthor}},
+    Text: {{data[data.length - 1].productText}},
+    Rating: {{data[data.length - 1].productRating}}
+  </p>
+ 
 </div>

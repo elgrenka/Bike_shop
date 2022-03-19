@@ -10,8 +10,13 @@ import {InputTextModule} from 'primeng/inputtext';
 import {InputNumberModule} from 'primeng/inputnumber';
 
 
+
+
 @NgModule({
   declarations: [
+    NewProductComponent
+  ],
+  exports: [
     NewProductComponent
   ],
   imports: [

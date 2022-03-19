@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { BikesService } from '../bikes.service';
 import { bikeData } from '../bikeData';
+// import { NewProductComponent } from '../new-product/new-product.component';
 
 @Component({
   selector: 'app-bikes-main',
@@ -22,5 +23,13 @@ export class BikesMainComponent implements OnInit {
     this.bikesService.getBikes()
       .subscribe(bikes => this.bikes = bikes);
   }
+
+  // @ViewChild(NewProductComponent) child:any;
+
+  // message!: string;
+
+  // ngAfterViewInit() {
+  //   this.message = this.child.message;
+  // }
 
 }

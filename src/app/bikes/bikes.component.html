@@ -44,6 +44,11 @@
       <button type="submit">🔎︎</button>
       <input type="date" name="calendar" [ngModel]="today | date:'yyyy-MM-dd'" (ngModelChange)="today = $event">
     </form>
+
+    <div class="buttons-block">
+      <button class="buttonCart" routerLink="/bikes-cart">Cart</button>
+      <button class="buttonWishList" routerLink="/bikes-wishlist">Wish List</button>
+    </div>
   </aside>
 
   <footer>

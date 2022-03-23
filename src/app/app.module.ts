@@ -21,6 +21,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from 'src/environments/environment';
 
 import { NewProductModule } from './new-product/new-product.module';
+import { BikesCartComponent } from './bikes-cart/bikes-cart.component';
+import { BikesWishlistComponent } from './bikes-wishlist/bikes-wishlist.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { NewProductModule } from './new-product/new-product.module';
     BikesOrderComponent,
     OrderEditorComponent,
     BikesContactComponent,
-    BikesOrderSubmitComponent
+    BikesOrderSubmitComponent,
+    BikesCartComponent,
+    BikesWishlistComponent
   ],
   imports: [
     BrowserModule,

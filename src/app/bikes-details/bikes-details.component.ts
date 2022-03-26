@@ -18,7 +18,7 @@ export class BikesDetailsComponent implements OnInit {
 
   dataCart: any = [];
   dataWishList: any = [];
-  inputValue2!: string;
+  // bikeName!: string;
 
   faStar = faStar;
 
@@ -58,18 +58,18 @@ export class BikesDetailsComponent implements OnInit {
     this.location.back();
   }
 
-  addToCart(inputValue: string) {
+  addToCart(inputValue: string, bikeName: string) {
     const ref = this.db.list("cart");
-    ref.push(inputValue).then((resp) => {
+    ref.push([inputValue, bikeName]).then((resp) => {
       console.log(resp);
     }).catch((error) => {
       console.error(error);
     })
   }
 
-  addToWishList(inputValue: string) {
+  addToWishList(inputValue: string, bikeName: string) {
     const ref2 = this.db.list("wishList");
-    ref2.push(inputValue).then((resp) => {
+    ref2.push([inputValue, bikeName]).then((resp) => {
       console.log(resp);
     }).catch((error) => {
       console.error(error);

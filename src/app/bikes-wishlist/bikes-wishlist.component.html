@@ -1,1 +1,9 @@
-<p>bikes-wishlist works!</p>
+<div class="container">
+  <div *ngFor="let data of dataWishList" class="fraction">
+    <p>Name: {{data[data.length - 1]}}</p>
+    <p>Color: {{data[0].colorBike}}</p>
+    <p>Size: {{data[0].sizeBike}}</p>
+    <p>Quantity: {{data[0].quantityBike}}</p>
+    <hr>
+  </div>  
+</div>

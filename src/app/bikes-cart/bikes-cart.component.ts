@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Component({
   selector: 'app-bikes-cart',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BikesCartComponent implements OnInit {
 
-  constructor() { }
+  dataCart: any = [];
+
+  constructor(private db: AngularFireDatabase) { }
 
   ngOnInit(): void {
+    const ref = this.db.list("cart");
+    ref.valueChanges().subscribe((data) => {
+      this.dataCart = data;
+      console.table(this.dataCart[this.dataCart.length - 1]);
+    })
   }
 
 }

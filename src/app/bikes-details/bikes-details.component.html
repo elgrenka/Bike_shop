@@ -69,12 +69,12 @@
   </div>
 
   <div class="button-block">
-    <button class="shopping-cart" (click)="addToCart(detailsForm.value, bike.name)">
+    <button class="shopping-cart" (click)="addToCart(detailsForm.value, bike.name, bike.imgUrl)">
       <span class="material-icons-outlined">shopping_cart</span>
       <span class="add">Add to cart</span>
     </button>
 
-    <button class="wish-list" (click)="addToWishList(detailsForm.value, bike.name)">
+    <button class="wish-list" (click)="addToWishList(detailsForm.value, bike.name, bike.imgUrl)">
       <span class="material-icons">auto_fix_high</span>
       <span class="add">Add to Wish list</span>
     </button>

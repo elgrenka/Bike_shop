@@ -58,28 +58,23 @@ export class BikesDetailsComponent implements OnInit {
     this.location.back();
   }
 
-  addToCart(inputValue: string, bikeName: string) {
+  addToCart(inputValue: string, bikeName: string, bikeImg: string) {
     const ref = this.db.list("cart");
-    ref.push([inputValue, bikeName]).then((resp) => {
+    ref.push([inputValue, bikeName, bikeImg]).then((resp) => {
       console.log(resp);
     }).catch((error) => {
       console.error(error);
     })
   }
 
-  addToWishList(inputValue: string, bikeName: string) {
+  addToWishList(inputValue: string, bikeName: string, bikeImg: string) {
     const ref2 = this.db.list("wishList");
-    ref2.push([inputValue, bikeName]).then((resp) => {
+    ref2.push([inputValue, bikeName, bikeImg]).then((resp) => {
       console.log(resp);
     }).catch((error) => {
       console.error(error);
     })
   }
-
-  // onKey(event: any) {
-  //   const inputValue2 = event.target.value;
-  //   console.log(inputValue2);
-  // }
 
   detailsForm = this.fb.group({
     colorBike: [''],

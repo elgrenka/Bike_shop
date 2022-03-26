@@ -1,6 +1,8 @@
 <div class="container">
+  <h2>Cart</h2>
   <div *ngFor="let data of dataCart" class="fraction">
-    <p>Name: {{data[data.length - 1]}}</p>
+    <p class="bike-image">Image: <img src="{{data[data.length - 1]}}" alt="bike"></p>
+    <p>Name: {{data[data.length - 2]}}</p>
     <p>Color: {{data[0].colorBike}}</p>
     <p>Size: {{data[0].sizeBike}}</p>
     <p>Quantity: {{data[0].quantityBike}}</p>

@@ -9,3 +9,18 @@
 p {
   margin-left: 50px;
 }
+
+.bike-image {
+  width: 200px;
+}
+
+.bike-image img {
+  object-fit: contain;
+  width: 100%;
+  margin-top: 5px;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(67, 74, 80);
+}

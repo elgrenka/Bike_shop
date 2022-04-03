@@ -1,1 +1,1 @@
-# Bike shop - firebase!
+# Bike shop with angular and firebase

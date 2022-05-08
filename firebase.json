@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "src",
+    "public": "bike_shop",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -9,9 +9,6 @@ import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
 import {InputNumberModule} from 'primeng/inputnumber';
 
-
-
-
 @NgModule({
   declarations: [
     NewProductComponent

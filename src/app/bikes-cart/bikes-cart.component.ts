@@ -10,13 +10,17 @@ export class BikesCartComponent implements OnInit {
 
   dataCart: any = [];
 
+  clearCart() {
+    this.db.list(`cart`).remove();
+  }
+
   constructor(private db: AngularFireDatabase) { }
 
   ngOnInit(): void {
     const ref = this.db.list("cart");
     ref.valueChanges().subscribe((data) => {
       this.dataCart = data;
-      console.table(this.dataCart[this.dataCart.length - 1]);
+      // console.table(this.dataCart[this.dataCart.length - 1]);
     })
   }
 

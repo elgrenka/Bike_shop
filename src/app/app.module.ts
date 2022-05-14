@@ -23,6 +23,7 @@ import { environment } from 'src/environments/environment';
 import { NewProductModule } from './new-product/new-product.module';
 import { BikesCartComponent } from './bikes-cart/bikes-cart.component';
 import { BikesWishlistComponent } from './bikes-wishlist/bikes-wishlist.component';
+import { BikesCart2Component } from './bikes-cart2/bikes-cart2.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { BikesWishlistComponent } from './bikes-wishlist/bikes-wishlist.componen
     BikesContactComponent,
     BikesOrderSubmitComponent,
     BikesCartComponent,
-    BikesWishlistComponent
+    BikesWishlistComponent,
+    BikesCart2Component
   ],
   imports: [
     BrowserModule,

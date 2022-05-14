@@ -10,6 +10,10 @@ export class BikesWishlistComponent implements OnInit {
 
   dataWishList: any = [];
 
+  clearCart() {
+    this.db.list("wishList").remove();
+  }
+
   constructor(private db: AngularFireDatabase) { }
 
   ngOnInit(): void {

@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>Cart</h2>
+  <h2>Cart1 (Firebase)</h2>
   <div *ngFor="let data of dataCart" class="fraction">
     <p class="bike-image">Image: <img src="{{data[data.length - 1]}}" alt="bike"></p>
     <p>Name: {{data[data.length - 2]}}</p>
@@ -7,5 +7,7 @@
     <p>Size: {{data[0].sizeBike}}</p>
     <p>Quantity: {{data[0].quantityBike}}</p>
     <hr>
-  </div>  
+  </div>
+
+  <button (click)="clearCart()">Clear Cart</button>
 </div>

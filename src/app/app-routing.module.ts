@@ -7,6 +7,7 @@ import { BikesContactComponent } from './bikes-contact/bikes-contact.component';
 import { BikesOrderSubmitComponent } from './bikes-order-submit/bikes-order-submit.component';
 import { BikesCartComponent } from './bikes-cart/bikes-cart.component';
 import { BikesWishlistComponent } from './bikes-wishlist/bikes-wishlist.component';
+import { BikesCart2Component } from './bikes-cart2/bikes-cart2.component';
 
 const routes: Routes = [
   { path: 'bikes', component: BikesMainComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'bikes-order-submit', component: BikesOrderSubmitComponent },
   { path: 'new-product', loadChildren: () => import('./new-product/new-product.module').then(m => m.NewProductModule) },
   { path: 'bikes-cart', component: BikesCartComponent },
-  { path: 'bikes-wishlist', component: BikesWishlistComponent }
+  { path: 'bikes-wishlist', component: BikesWishlistComponent },
+  { path: 'bikes-cart2', component: BikesCart2Component }
 ];
 
 @NgModule({

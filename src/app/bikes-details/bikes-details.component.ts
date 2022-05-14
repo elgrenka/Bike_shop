@@ -18,11 +18,15 @@ export class BikesDetailsComponent implements OnInit {
 
   dataCart: any = [];
   dataWishList: any = [];
-  // bikeName!: string;
 
   faStar = faStar;
 
   bike: bikeData | undefined;
+  
+  addToCart2(inputValue: string, bikeName: string, bikeImg: string) {
+    this.bikesService.addToCart2(inputValue, bikeName, bikeImg);
+    window.alert('Your product has been added to the Cart1 and Cart2');
+  }
 
   constructor(
     private route: ActivatedRoute,
@@ -38,13 +42,11 @@ export class BikesDetailsComponent implements OnInit {
     const ref = this.db.list("cart");
     ref.valueChanges().subscribe((data) => {
       this.dataCart = data;
-      console.table(this.dataCart[this.dataCart.length - 1]);
     })
 
     const ref2 = this.db.list("wishList");
     ref2.valueChanges().subscribe((data) => {
       this.dataWishList = data;
-      console.table(this.dataWishList[this.dataWishList.length - 1]);
     })
   }
 

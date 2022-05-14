@@ -30,6 +30,7 @@ export class NewProductComponent implements OnInit {
 
   onSubmit() {
     console.table(this.newProductForm.value);
+    alert('You create a new bike in firebase');
   }
 
   saveData(inputValue: string) {

@@ -132,12 +132,15 @@ nav button {
   align-self: center;
   margin-bottom: 40px;
   padding: 10px 6px;
-  border-radius: 15px;
+  border-radius: 5px;
+  background-color: #3a8928;
+  color: white;
 }
 
 nav button:hover {
   cursor: pointer;
-  background-color: #ddd;
+  background-color: rgb(223, 217, 127);
+  color: #000;
 }
 
 
@@ -203,12 +206,15 @@ aside {
   width: 60%;
   margin: 20px 0;
   padding: 10px 6px;
-  border-radius: 30px;
+  border-radius: 5px;
+  background-color: #6366f1;
+  color: white;
 }
 
 .buttons-block button:hover {
   cursor: pointer;
-  background-color: #ddd;
+  background-color:rgb(223, 217, 127);
+  color: #000;
 }
 
 

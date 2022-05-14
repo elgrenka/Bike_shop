@@ -89,8 +89,8 @@
 
   <!-- <p><b>New Product: </b>{{newProductForm.value | json}}</p> -->
   
-  <p><b>New Product from firebase: </b>
-    Image: {{data[data.length - 1].productImage!}},
+  <p *ngIf="data.length"><b>New Product from firebase: </b>
+    Image: {{data[data.length - 1].productImage}},
     Id: {{data[data.length - 1].productId}},
     Price: {{data[data.length - 1].productPrice}},
     Discount: {{data[data.length - 1].productDiscount}},

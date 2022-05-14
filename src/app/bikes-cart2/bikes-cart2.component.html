@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Cart2</h2>
+  <div *ngFor="let item of items" class="fraction">
+    <p class="bike-image">Image: <img src="{{item[item.length - 1]}}" alt="bike"></p>
+    <p>Name: {{item[1]}}</p>
+    <p>Color: {{item[0].colorBike}}</p>
+    <p>Size: {{item[0].sizeBike}}</p>
+    <p>Quantity: {{item[0].quantityBike}}</p>
+    <hr>
+  </div>
+
+  <button (click)="clearCart()">Clear Cart</button>
+</div>

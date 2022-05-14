@@ -69,7 +69,7 @@
   </div>
 
   <div class="button-block">
-    <button class="shopping-cart" (click)="addToCart(detailsForm.value, bike.name, bike.imgUrl)">
+    <button class="shopping-cart" (click)="addToCart(detailsForm.value, bike.name, bike.imgUrl); addToCart2(detailsForm.value, bike.name, bike.imgUrl)">
       <span class="material-icons-outlined">shopping_cart</span>
       <span class="add">Add to cart</span>
     </button>
